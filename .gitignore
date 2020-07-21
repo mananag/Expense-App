@@ -1,5 +1,5 @@
 node_modules/
 .idea/
 playground/
-./package-lock.jsonplayground/redux-101.js
+playground/redux-101.js
 playground/redux-expensify.js
