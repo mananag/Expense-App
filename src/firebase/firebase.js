@@ -16,31 +16,52 @@ firebase.analytics();
 
 const database = firebase.database()
 
-database.ref().set({
-    name: 'Manan Agrawal',
-    age: 19,
-    isSingle: false,
-    location: {
-        city: 'Surat',
-        country: 'India'
-    }
-})
-    .then(() => {
-    console.log('Data Saved')
-    })
-    .catch((e) => {
-    console.log('This failed', e)
-    })
+export { firebase, database as default }
 
-database.ref().update({
-    name: 'Manan',
-    age: '20'
-})
-    .then(() => {
-        console.log('Updated')
-    }).catch((e) => {
-        console.log('Error :(' , e)
-})
+// database.ref().on('value', (snapshot) => {
+//     const val = snapshot.val();
+//     console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`)
+// })
+
+// database.ref()
+//     .once('value')
+//     .then((snapshot) => {
+//         const val  =snapshot.val();
+//         console.log(val)
+//     })
+//     .catch((e) => {
+//         console.log('Error fetching data : ', e)
+//     })
+
+// database.ref().set({
+//     name: 'Manan Agrawal',
+//     age: 19,
+//     stressLevel: 4,
+//     job: {
+//       title: 'Software Developer',
+//       company: 'Google'
+//     },
+//     location: {
+//         city: 'Surat',
+//         country: 'India'
+//     }
+// })
+//     .then(() => {
+//     console.log('Data Saved')
+//     })
+//     .catch((e) => {
+//     console.log('This failed', e)
+//     })
+//
+// database.ref().update({
+//     name: 'Manan',
+//     age: '20'
+// })
+//     .then(() => {
+//         console.log('Updated')
+//     }).catch((e) => {
+//         console.log('Error :(' , e)
+// })
 // database.ref().remove()
 //     .then(() => {
 //         console.log("Remove succeeded.")
