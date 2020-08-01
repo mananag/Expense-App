@@ -1,0 +1,55 @@
+.loginWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/public/images/loginBack.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: Gilroy-Medium;
+  color: #fff700;
+  text-align: center;
+  justify-content: center;
+  h1{
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+    align-content: center;
+  }
+  p{
+    color: antiquewhite;
+    font-family: Gilroy;
+    margin-block-start: 0.5em;
+    font-size: 0.9em;
+    margin-block-end: 1.2em;
+  }
+  button{
+    margin: 0 20px;
+    padding: 10px;
+    font-family: Poppins;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    text-shadow: grey -3px 2px 11px;
+    background-color: #21f3af;
+    transition: all 0.1s;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+  button:active{
+    transform: scale(1);
+    border: none;
+  }
+  button:focus{
+    transform: scale(1);
+    border: none;
+  }
+}
