@@ -1,7 +1,6 @@
 .loginWrapper {
   width: 100vw;
   height: 100vh;
-  background-image: url("/public/images/loginBack.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -10,35 +9,41 @@
 }
 
 .loginContainer {
+  padding: 50px;
+  background: #001939;
+  box-shadow: #0000004f -7px 8px 15px;
+  border-radius: 17px;
   display: flex;
   flex-direction: column;
-  font-family: Gilroy-Medium;
-  color: #fff700;
+  font-family: poppins;
+  color: #ffffff;
   text-align: center;
   justify-content: center;
   h1{
     text-align: center;
-    margin: 0;
-    letter-spacing: 1px;
-    align-content: center;
+    margin: 0 0 11px;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    align-items: center;
   }
   p{
-    color: antiquewhite;
     font-family: Gilroy;
     margin-block-start: 0.5em;
-    font-size: 0.9em;
-    margin-block-end: 1.2em;
+    font-size: 1.1em;
+    margin-block-end: 2em;
+    opacity: 0.85;
   }
   button{
     margin: 0 20px;
     padding: 10px;
     font-family: Poppins;
     border-radius: 50px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 2px;
     border: none;
     text-shadow: grey -3px 2px 11px;
-    background-color: #21f3af;
+    background-color: #1A237E;
+    color: white;
     transition: all 0.1s;
   }
   button:hover{
@@ -50,6 +55,6 @@
   }
   button:focus{
     transform: scale(1);
-    border: none;
+    outline: none;
   }
 }

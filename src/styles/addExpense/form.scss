@@ -1,0 +1,44 @@
+.expenseForm{
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  input{
+    padding: 15px;
+    border-radius: 9px;
+    border: 0.5px gray solid;
+    box-sizing: border-box;
+    /* margin: 25px 0; */
+    box-shadow: 2px 1px #757575;
+  }
+  .description{
+    width: 100%;
+    margin: 3% 0;
+  }
+  .amount{
+    width: 60%;
+    margin: 2% 0;
+  }
+  textarea{
+    width: 100%;
+    height: 29vh;
+    margin: 3% 0 4%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3%;
+  }
+  button{
+    background: black;
+    color: white;
+    padding: 3% 5%;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.9em;
+    border-radius: 10px;
+  }
+  .SingleDatePicker {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
