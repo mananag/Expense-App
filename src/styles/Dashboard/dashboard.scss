@@ -1,0 +1,27 @@
+.dashboardContainer{
+  padding: 3% 10%;
+  box-sizing: border-box;
+  height: 88vh;
+}
+
+.filtersContainer{
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  .searchBar{
+    border-radius: 10px;
+    border: 1px #424242 solid;
+    background: none;
+    width: 28%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  select{
+    font-family: 'Poppins';
+    padding: 10px;
+    border-radius: 7px;
+  }
+  option{
+
+  }
+}

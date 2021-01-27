@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Pecita';
+    src: url(Pecita.otf);
+}
+
+@font-face {
     font-family: 'Gilroy';
     src: url(Gilroy-Light.otf);
 }
@@ -23,6 +28,12 @@
     font-style: normal;
     font-weight: normal;
     src: local('Gilroy-Bold ☞'), url('Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Nunito/Nunito-Regular.ttf') format('ttf');
 }
 
 @font-face {
