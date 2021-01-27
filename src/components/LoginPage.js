@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { startLogin } from "../actions/auth";
+import '../styles/loginPage/login.scss';
 
 export const LoginPage = ({startLogin}) => (
     <div className={'loginWrapper'}>

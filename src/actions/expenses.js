@@ -1,4 +1,4 @@
-import {v4 as uuid} from "uuid";
+// import {v4 as uuid} from "uuid";
 import database from '../firebase/firebase'
 
 // ADD_EXPENSE
@@ -82,7 +82,7 @@ export const startSetExpense = () => {
                         ...childSnapshot.val()
                     })
                 })
-
+                console.log(expenses)
                 dispatch(setExpenses(expenses));
             })
     }

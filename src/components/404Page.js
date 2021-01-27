@@ -3,7 +3,8 @@ import React from "react";
 
 const NotFoundPage = () => (
     <div>
-        404 <NavLink to={'/'}>Go to Home</NavLink>
+        404
+        <a href={'/'}>Go to Home</a>
     </div>
 )
 

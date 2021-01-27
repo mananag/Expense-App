@@ -1,6 +1,6 @@
 import React from 'react';
-// noinspection ES6CheckImport
 import {
+    BrowserRouter,
     Router,
     Route,
     Switch
@@ -12,12 +12,12 @@ import LoginPage from "../components/LoginPage";
 import AddExpensePage from "../components/AddExpense";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
-import createBrowserHistory from 'history/createBrowserHistory'
+import {createBrowserHistory} from 'history'
 
 export const history = createBrowserHistory()
 
 const AppRouter = () => (
-    <Router history={history}>
+    <BrowserRouter history={history}>
         <div>
             <Switch>
                 <PublicRoute path="/" component={LoginPage} exact={true} />
@@ -27,7 +27,7 @@ const AppRouter = () => (
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
-    </Router>
+    </BrowserRouter>
 );
 
 export default AppRouter;

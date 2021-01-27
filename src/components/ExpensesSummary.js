@@ -12,7 +12,12 @@ const ExpenseSummary = ({expensesTotal, expenseCount}) => {
 
     return (
         <div>
-            <h1>Viewing {expenseCount} {expenseWord} totalling {formattedExpensesTotal}</h1>
+
+            <div className={'textHeader'}>
+                Your Expenses
+            </div>
+            <h2>Viewing {expenseCount} {expenseWord} totalling {formattedExpensesTotal}</h2>
+
         </div>
     )
 }

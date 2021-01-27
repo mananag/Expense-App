@@ -6,7 +6,8 @@ import {startEditExpense, startRemoveExpense} from "../actions/expenses";
 const EditExpensePage = (props) => {
     console.log(props.expense)
     return (
-    <div>
+    <div className={'dashboardContainer'}>
+        <h1 className={'textHeader'}>Edit Expense</h1>
         <ExpenseForm expense = {props.expense} onSubmit = {(expense) => {
             props.dispatch(startEditExpense(props.expense.id, {...expense}));
             props.history.push('/');
