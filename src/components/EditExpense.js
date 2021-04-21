@@ -10,11 +10,11 @@ const EditExpensePage = (props) => {
         <h1 className={'textHeader'}>Edit Expense</h1>
         <ExpenseForm expense = {props.expense} onSubmit = {(expense) => {
             props.dispatch(startEditExpense(props.expense.id, {...expense}));
-            props.history.push('/');
+            window.location.href ='/dashboard'
         }} />
         <button onClick={() => {
             (props.dispatch(startRemoveExpense({id: props.expense.id})))
-            props.history.push('/');
+            window.location.href = '/dashboard'
         }}>Remove</button>
     </div>
 )}
