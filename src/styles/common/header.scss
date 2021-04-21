@@ -7,7 +7,7 @@
   align-items: center;
   height: 10vh;
   box-sizing: border-box;
-  border-bottom: 1px black solid;
+  border-bottom: 1px #262340 solid;
   h1{
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     //font-weight: 600;
     letter-spacing: 1px;
     padding: 8px 25px;
-    border: 1px black solid;
+    border: 1px #262340 solid;
     border-radius: 8px;
     background: #262340;
     color: white;
@@ -41,7 +41,7 @@ nav{
     margin-left: auto;
   }
   a{
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 3%;  }
 }
