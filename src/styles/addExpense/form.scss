@@ -10,11 +10,12 @@
     border: 0.5px gray solid;
     box-sizing: border-box;
     /* margin: 25px 0; */
-    box-shadow: 2px 1px #757575;
+    //box-shadow: 2px 1px #757575;
   }
   .description{
     width: 100%;
     margin: 3% 0;
+    outline: none;
   }
   .amount{
     width: 60%;
@@ -29,8 +30,8 @@
     padding: 3%;
   }
   button{
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     padding: 3% 5%;
     font-family: 'Gilroy-Regular';
     font-size: 0.9em;

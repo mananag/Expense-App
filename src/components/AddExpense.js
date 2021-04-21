@@ -6,7 +6,7 @@ import {startAddExpense} from "../actions/expenses";
 class AddExpensePage extends React.Component{
     onSubmit = (expense) => {
         this.props.dispatch(startAddExpense(expense))
-        window.location.href('/dashboard')
+        window.location.href = '/dashboard'
     };
     render() {
         return(

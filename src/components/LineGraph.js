@@ -50,7 +50,7 @@ const LineGraph = ({dataPoints}) => {
             dockInsidePlotArea: true,
         },
         data: [{
-            type: "line",
+            type: "spline",
             // showInLegend: true,
             name: "Expenses",
             // markerType: "square",
