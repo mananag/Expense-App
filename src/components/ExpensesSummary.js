@@ -1,12 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import selectExpenses from "../selectors/expenses";
-import expensesTotal from '../selectors/expensesTotal'
-import CanvasJSReact from "../lib/canvasjs.react";
 import PieChart from "./PieChart";
 import LineGraph from "./LineGraph";
-const CanvasJS = CanvasJSReact.CanvasJS
-const CanvasJSChart = CanvasJSReact.CanvasJSChart
 
 const ExpenseSummary = ({expenses}) => {
     console.log(expenses)

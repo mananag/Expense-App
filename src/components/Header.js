@@ -10,7 +10,7 @@ export const Header = ({startLogout}) => (
             <h1> <img src={expensify}/> </h1>
             <NavLink exact to={'/dashboard'} activeClassName = 'is-active'>Dashboard</NavLink>
             <NavLink to={'/create'} activeClassName = 'is-active'>Create Expense</NavLink>
-            <NavLink to={'/create'} activeClassName = 'is-active'>Settings</NavLink>
+            <NavLink to={'/settings'} activeClassName = 'is-active'>Settings</NavLink>
             <button onClick={startLogout}>Logout</button>
 
         </nav>

@@ -10,7 +10,8 @@
   justify-content: space-between;
   .searchBar{
     border-radius: 10px;
-    border: 1px #424242 solid;
+    border: 1px white solid;
+    color: white;
     background: none;
     width: 28%;
     padding: 0 20px;
@@ -41,4 +42,80 @@
   display: none;
 }
 
+.DateInput_input {
+  //text-align: center;
+  font-weight: 200;
+  font-size: 0.9em;
+  /* border-radius: 10px; */
+  line-height: 24px;
+  color: white;
+  background-color: #0F0B2C;
+  width: 100%;
+  padding: 11px 14% 9px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
 
+.DateInput_input::placeholder{
+  text-align: center;
+}
+
+.DateInput{
+  background: none;
+}
+
+.DateRangePickerInput__showClearDates{
+  border: none;
+}
+
+.DateRangePickerInput__withBorder{
+  background: none;
+}
+
+.DateRangePickerInput_arrow_svg {
+  vertical-align: middle;
+  background: #008AFF;
+  border-radius: 50px;
+  padding: 6px;
+  margin: 0 23px;
+  fill: white;
+  height: 24px;
+  width: 24px;
+}
+
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  /* padding: 10px; */
+  display: flex;
+  /* margin: 0 10px 0 5px; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  /* margin: 0 10px 0 5px; */
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 50%; */
+  transform: translateY(-50%);
+  align-items: center;
+}

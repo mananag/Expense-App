@@ -31,14 +31,16 @@ const LineGraph = ({dataPoints}) => {
             crosshair: {
                 // enabled: true,
                 snapToDataPoint: true
-            }
+            },
+            gridThickness: 0
         },
         axisY: {
             title: "Amount",
             includeZero: true,
             crosshair: {
                 enabled: true
-            }
+            },
+            gridThickness: 0
         },
         toolTip:{
             shared:true
@@ -48,12 +50,13 @@ const LineGraph = ({dataPoints}) => {
             verticalAlign: "bottom",
             horizontalAlign: "left",
             dockInsidePlotArea: true,
+            gridThickness: 0
         },
         data: [{
             type: "spline",
-            // showInLegend: true,
+            showInLegend: true,
             name: "Expenses",
-            // markerType: "square",
+            markerType: "square",
             xValueFormatString: "DD MMM, YYYY",
             color: "#41FBEF",
             dataPoints
