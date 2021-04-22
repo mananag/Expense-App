@@ -7,6 +7,7 @@ import {startSetExpense} from "./actions/expenses";
 import {login, logout} from "./actions/auth";
 import './styles/style.scss';
 import {firebase} from "./firebase/firebase";
+import Loading from "./components/Loading"
 const store = configureStore();
 
 const jsx = (
@@ -24,7 +25,7 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<Loading />, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -32,8 +33,7 @@ firebase.auth().onAuthStateChanged((user) => {
         store.dispatch(startSetExpense()).then(() => {
             renderApp();
             if (history.location.pathname === '/') {
-                history.push('/dashboard');
-                window.location.href = window.location.href
+                window.location.href = '/dashboard'
             }
         });
     } else {
@@ -41,8 +41,7 @@ firebase.auth().onAuthStateChanged((user) => {
         renderApp();
         if (history.location.pathname != '/'){
 
-            history.push('/');
-            window.location.href = window.location.href
+            window.location.href = '/'
         }
     }
 });

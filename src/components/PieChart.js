@@ -24,9 +24,8 @@ const PieChart = ({dataPoints, totalAmount}) => {
     }
 
     return (
-        <div className={'graphContainer'}>
-            <div id="chartContainer" style={{width: "100%",   height: "40%"
-            }}>
+        <div className={'graphContainer'} >
+            <div id="chartContainer" style={{width: "100%",   height: "100%"}}>
                 <CanvasJSChart options = {options} />
             </div>
         </div>

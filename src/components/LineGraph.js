@@ -54,7 +54,7 @@ const LineGraph = ({dataPoints}) => {
         data: [{
             type: "spline",
             showInLegend: true,
-            name: "Expenses",
+            name: "Amount",
             markerType: "square",
             xValueFormatString: "DD MMM, YYYY",
             color: "#41FBEF",
@@ -63,7 +63,7 @@ const LineGraph = ({dataPoints}) => {
         }]
     }
     return (
-        <div className={'graphContainer'} style={{width: "120%", paddingRight:"3%", marginRight: "2%"}} >
+        <div className={'graphContainer'} style={{width: "150%", height: "100%", paddingRight:"3%", marginRight: "2%"}} >
             <div id="chartContainer" style={{width: "100%"}}>
                 <CanvasJSChart options = {options} />
             </div>
