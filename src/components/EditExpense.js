@@ -5,17 +5,17 @@ import {startEditExpense, startRemoveExpense} from "../actions/expenses";
 
 const EditExpensePage = (props) => {
     console.log(props.expense)
+    const handleRemove = () => {
+        (props.dispatch(startRemoveExpense({id: props.expense.id})))
+        window.location.href = '/dashboard'
+    }
     return (
     <div className={'dashboardContainer'}>
         <h1 className={'textHeader'}>Edit Expense</h1>
         <ExpenseForm expense = {props.expense} onSubmit = {(expense) => {
             props.dispatch(startEditExpense(props.expense.id, {...expense}));
             window.location.href ='/dashboard'
-        }} />
-        <button onClick={() => {
-            (props.dispatch(startRemoveExpense({id: props.expense.id})))
-            window.location.href = '/dashboard'
-        }}>Remove</button>
+        }} handleRemove = {handleRemove} formType = {"edit"} />
     </div>
 )}
 

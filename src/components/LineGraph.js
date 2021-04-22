@@ -4,7 +4,6 @@ const CanvasJS = CanvasJSReact.CanvasJS
 const CanvasJSChart = CanvasJSReact.CanvasJSChart
 
 const LineGraph = ({dataPoints}) => {
-    console.log(dataPoints)
     CanvasJS.addColorSet("greenShades",
         [//colorSet Array
 

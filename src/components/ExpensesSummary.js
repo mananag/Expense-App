@@ -5,18 +5,14 @@ import PieChart from "./PieChart";
 import LineGraph from "./LineGraph";
 
 const ExpenseSummary = ({expenses}) => {
-    console.log(expenses)
     const dataPoints = []
     const dataPoints2 = []
     let totalAmount = 0
     expenses.slice(0).reverse().map(({amount, description, createdAt}) => {
         dataPoints.push({ y: amount, label: description})
         totalAmount+=amount;
-        console.log({x: new Date(createdAt), y: totalAmount})
         dataPoints2.push({x: new Date(createdAt), y: totalAmount})
     })
-
-    console.log(dataPoints)
 
     return (
         <div id="chartContainer" style={{width: "100%", display: "flex"}}>

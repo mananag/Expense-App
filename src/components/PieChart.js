@@ -4,7 +4,6 @@ const CanvasJS = CanvasJSReact.CanvasJS
 const CanvasJSChart = CanvasJSReact.CanvasJSChart
 
 const PieChart = ({dataPoints, totalAmount}) => {
-    console.log(dataPoints)
     const options = {
         animationEnabled: true,
         theme: "dark1",

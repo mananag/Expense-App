@@ -36,10 +36,19 @@
     font-family: 'Gilroy-Regular';
     font-size: 0.9em;
     border-radius: 10px;
+    margin: 0 5% 0 0;
   }
   .SingleDatePicker {
     position: relative;
     display: flex;
     align-items: center;
+  }
+  .formButtonContainer{
+    display: flex;
+    width: 100%;
+  }
+  .removeButton{
+    background: #f44336;
+    color: white;
   }
 }

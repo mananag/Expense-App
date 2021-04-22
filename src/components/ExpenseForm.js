@@ -90,7 +90,11 @@ export default class ExpenseForm extends React.Component{
                               onChange={this.onNoteChange}
                     >
                 </textarea>
-                    <button>Add Expense</button>
+                    <div className={'formButtonContainer'}>
+                        <button type={'submit'} > {this.props.formType === "edit" ? "Edit Expense" : "Add Expense"} </button>
+                        {this.props.formType === "edit" && <button className={'removeButton'} type={"button"} onClick={this.props.handleRemove}>Remove</button>}
+                    </div>
+
                 </form>
             </div>
         )
