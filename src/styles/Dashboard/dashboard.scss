@@ -38,6 +38,27 @@
   height: 40%;
 }
 
+.dashboardHeaderContainer{
+  display: flex;
+  justify-content: space-between;
+  .dashboardAddExpense{
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.1s;
+    text-decoration: none;
+  }
+  .dashboardAddExpense:hover{
+    transform: scale(1.05);
+  }
+}
+
 .canvasjs-chart-credit{
   display: none;
 }

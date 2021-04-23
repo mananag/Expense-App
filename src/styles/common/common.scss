@@ -9,7 +9,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  //padding-bottom: 100px;
   font-family: Gilroy-Regular, serif;
 }
 
@@ -34,7 +33,7 @@ button:disabled {
 .textHeader::after{
   content: '';
   height: 3.5px;
-  width: 10%;
+  width: 100px;
   margin-top: 4px;
   border-radius: 50px;
   display: block;
